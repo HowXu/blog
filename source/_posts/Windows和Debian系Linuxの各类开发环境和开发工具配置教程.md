@@ -4,7 +4,7 @@ date: 2023-06-08 10:52:01
 tags: 
     - windows
     - linux
-index_img: 
+index_img: ../images/1726712355624.png
 ---
 
 
@@ -280,7 +280,7 @@ Node的脚手架npm在安装Node时就一并安装了。
 ## Windows
 
 前往Node的官方网站下载安装包，[链接](https://nodejs.org/zh-cn)
-![在这里插入图片描述](https://i-blog.csdnimg.cn/blog_migrate/4494ed2318a3362016b1bee3a9e96994.png)
+![](../images/1726712355624.png)  
 下载后是一个msi文件，找个地方安装就行了，它会自动设置环境变量。
 
 **可选操作：**
