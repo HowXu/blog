@@ -2,10 +2,8 @@
 title: Java中文乱码浅析及解决方案
 date: 2023-01-09 10:36:23
 tags: java
-header-img: ../images/1726712355170.png
+index_img: ../images/1726712355170.png
 ---
-
-@[TOC](目录)
 
 # 直入主题
 
