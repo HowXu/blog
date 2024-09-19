@@ -1,7 +1,9 @@
 ---
 title: Windows上的PowerShell美化和Linux终端zsh美化
 date: 2023-04-29 10:46:38
-tags: shell terminal
+tags: 
+    - shell
+    - terminal
 index_img: ../images/1726712354823.png
 ---
 

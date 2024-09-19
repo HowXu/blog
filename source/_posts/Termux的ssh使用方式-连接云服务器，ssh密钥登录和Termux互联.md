@@ -1,7 +1,9 @@
 ---
 title: Termux的ssh使用方式(连接云服务器，ssh密钥登录和Termux互联)
 date: 2022-10-09 10:24:20
-tags: termux server
+tags: 
+    - server
+    - termux
 index_img: ../images/1726712356422.png
 ---
 

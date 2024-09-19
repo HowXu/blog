@@ -1,7 +1,9 @@
 ---
 title: 云服务器+ASF实现全天挂卡挂时长
 date: 2024-05-02 11:23:28
-tags: linux server
+tags: 
+    - server
+    - linux
 index_img: ../images/1726712354079.png
 ---
 

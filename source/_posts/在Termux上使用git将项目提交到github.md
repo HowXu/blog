@@ -1,7 +1,9 @@
 ---
 title: 在Termux上使用git将项目提交到github
 date: 2022-10-09 08:24:20
-tags: termux git
+tags: 
+    - termux
+    - github
 index_img: ../images/1726712356630.png
 ---
 

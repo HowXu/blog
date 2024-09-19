@@ -1,7 +1,8 @@
 ---
 title: WSL初体验
 date: 2024-01-14 11:19:37
-tags: windows
+tags: 
+    - shell
 index_img: ../images/1726712354278.png
 ---
 

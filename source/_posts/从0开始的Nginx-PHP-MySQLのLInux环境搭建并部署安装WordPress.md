@@ -1,7 +1,9 @@
 ---
 title: 从0开始的Nginx+PHP+MySQLのLInux环境搭建并部署安装WordPress
 date: 2022-10-29 10:34:00
-tags: linux server
+tags: 
+    - server
+    - linux
 ---
 
 # 写在最前

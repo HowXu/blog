@@ -1,7 +1,9 @@
 ---
 title: Windows和Debian系Linuxの各类开发环境和开发工具配置教程
 date: 2023-06-08 10:52:01
-tags: windows linux
+tags: 
+    - windows
+    - linux
 index_img: 
 ---
 
