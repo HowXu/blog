@@ -246,9 +246,32 @@ xmake r #运行编译后的产物
 
 ![](../images/1726712354329.png)
 
+如果不想运行`xmake f -p mingw --mingw=path\mingw -c`切换平台，你可以直接在xmake.lua文件里配置:
+
+```lua
+add_rules("mode.debug", "mode.release")
+
+target("hello")
+    set_kind("binary")
+    add_files("src/**.c")
+    set_toolchains("mingw")
+```
+
 简直薄纱cmake有没有。
 
-除此以外，xmake还有极强的包管理能力，多种编译器支持，具体可以到官网看看。
+除此以外，xmake还有极强的包管理能力，多种编译器支持，具体可以到官网看看。比较常用的是添加头文件和Lib目录：
+
+
+```lua
+add_rules("mode.debug", "mode.release")
+
+target("hello")
+    set_kind("binary")
+    add_files("src/**.c") --添加源文件
+    set_toolchains("mingw") --切换编译平台
+    add_includedirs("xxx") -- 头文件
+    add_linkdirs("xxx") --libs目录
+```
 
 ## 5.VSCode的生成和调试
 
