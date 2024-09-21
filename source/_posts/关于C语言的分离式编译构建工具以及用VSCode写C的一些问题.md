@@ -271,6 +271,7 @@ target("hello")
     set_toolchains("mingw") --切换编译平台
     add_includedirs("xxx") -- 头文件
     add_linkdirs("xxx") --libs目录
+    add_links("xxx","xxx","xxx") --设置libs，这个只能自己一个一个写，编译器在不指定的情况下不会自动找lib，会出现undefined reference to报错
 ```
 
 ## 5.VSCode的生成和调试
