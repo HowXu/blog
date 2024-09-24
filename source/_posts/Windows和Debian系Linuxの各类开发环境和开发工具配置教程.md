@@ -406,7 +406,7 @@ Rust的开发环境安装其实很简单，官网下个exe然后夸夸一顿点�
 
 
 在系统变量中新建如下表格中的变量，然后把其中`CARGO_HOME`和`RUSTUP_HOME`添加到Path变量中。
-| 变名称|内容 |
+| 变量名称|内容 |
 |--|--|
 |CARGO_HOME|你想要cargo安装的位置|
 |RUSTUP_HOME|你想要rust安装的位置|
