@@ -414,7 +414,9 @@ Rust的开发环境安装其实很简单，官网下个exe然后夸夸一顿点�
 |RUSTUP_UPDATE_ROOT|https://mirrors.ustc.edu.cn/rust-static/rustup|
 
 之后再次运行安装程序：  
-![](../images/1726712356484.png)这里已经更改安装位置了，但是改不了使用的套件。
+![](../images/1726712356484.png)
+
+这里已经更改安装位置了，但是改不了使用的套件。
 
 **以管理员权限运行**：
 
