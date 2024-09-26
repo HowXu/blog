@@ -6,4 +6,4 @@
 
 托管在Github上,使用CloudFlare进行加速
 
-访问[blog.howxu.icu](blog.howxu.icu)
+访问[blog.howxu.icu](https://blog.howxu.icu)
