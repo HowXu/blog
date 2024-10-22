@@ -322,7 +322,7 @@ tar -xf node-v18.17.1-linux-x64.tar.xz
 sudo mv node-v18.17.1-linux-x64 /opt/nodejs
 ```
 
-打开~/.bashrc文件，向其中加入环境变量(参考Java)
+打开~/.profile文件，向其中加入环境变量(参考Java)
 
 ![](../images/1726712355759.png)安装就完成了。
 
@@ -432,7 +432,7 @@ Rust的开发环境安装其实很简单，官网下个exe然后夸夸一顿点�
 
 前面说到Rust是默认安装在home目录下的，而且下载很慢。在Linux下我们也可以配置几个环境变量来改变它。
 
-如果不是安装在/usr/lib这种目录下，这个环境变量配置为用户变量即可，但是我这里要把它塞到/usr/lib下，所以我在/eyc/profile里配置。
+如果不是安装在/usr/lib这种目录下，这个环境变量配置为用户变量即可，但是我这里要把它塞到/usr/lib下，所以我在/etc/profile里配置。
 
 首先新建我们需要它安装的文件夹(真的抽象新新建)，一个是.rustup文件夹，一个是.cargo文件夹
 
@@ -757,7 +757,7 @@ unzip gradle-8.3-bin.zip
 sudo mv gradle-8.3-bin /opt/gradle
 ```
 
-然后一样配置环境变量，打开`～/.bashrc`加入这些内容。
+然后一样配置环境变量，打开`～/.profile`加入这些内容。
 
 ```sh
 export GRADLE_HOME=/opt/gradle
@@ -858,15 +858,13 @@ sudo apt install docker
 ## 题外话
 
 **关于Linux环境变量的事情**
-在整篇文章中我都推荐Linux上配置环境变量是更改**~/.bashrc**文件。了解Linux的读者会知道很多比如`.bash_profile`，`/etc/bash.bashrc`，`/etc/environment`，`/etc/profile`等。
+在整篇文章中我都推荐Linux上配置环境变量是更改**~/.profile**文件。了解Linux的读者会知道很多比如`.bashrc`，`.bash_profile`，`/etc/bash.bashrc`，`/etc/environment`，`/etc/profile`等。
 
-其中有些文件关系系统的等级比较高，配置错了就会让整个系统shutdown，还有一些文件是特定发行版才有的，但是.bashrc文件是通用的，因此文章中配置环境变量都在这个文件里。
+其中有些文件关系系统的等级比较高，配置错了就会让整个系统shutdown，还有一些文件是特定发行版才有的，以rc结尾的文件大多只对本Shell环境有效，比如.bashrc是Bash Shell的配置文件，严格意义上不能为整个系统添加上环境变量(某些程序调用系统级函数读取环境变量是不经过Shell的)，而只是在新开的Bash中有用(如果你用的是zsh，那这个东西更没用，得在.zshrc里配置才有用)。
 
-但是这也有缺点。.bashrc是Bash Shell的配置文件，严格意义上不能为整个系统添加上环境变量(某些程序调用系统级函数读取环境变量是不经过Shell的)，而只是在新开的Bash中有用(如果你用的是zsh，那这个东西更没用，得在.zshrc里配置才有用)。
+但是.profile文件是通用的，因此文章中配置环境变量都在这个文件里。
 
-我的建议是先在.bashrc文件中配置，配置无误后(即新开Bash Shell时Shell不报错，运行命令也正常)，转到系统级的配置文件`/etc/profile`中(需要root权限。这个文件也是Linux都有的，而且优先级很高，可以直接为整个系统设置变量而不仅仅是Bash)。
-
-有些时候在/etc/profile里配置了环境变量但是没用。这个是因为.bashrc文件把/etc/profile顶掉了，只需要在.bashrc末尾加一句`source /etc/profile`就可以解决了。
+在.profile文件中配置最为稳当。而且当配置无误后(即新开Shell不报错，运行命令也正常)，你甚至可以转到系统级的配置文件`/etc/profile`中(需要root权限。这个文件也是Linux都有的，而且优先级很高，可以直接为整个系统设置变量而不仅仅是Bash)。
 
 参考文章[操作系统：Linux 环境变量配置的 6 种方法](https://blog.csdn.net/xishining/article/details/119283522)
 
