@@ -27,8 +27,7 @@ GitHub Actions多数时候会调用一个叫做`github-actions`的机器人进�
 
 ![](../images/1726712353687.png)
 
-
-打开你的项目的`settings`页面，找到`Secrets`选项卡，选中`Actions`，选中下方`New secret`，<font color=red>名字不重要可以随便取</font>，填入刚刚的密钥后保存即可。
+打开你的项目的`settings`页面，找到`Secrets`选项卡，选中`Actions`，选中下方`New secret`，<font color=red>名字不重要可以随便取，但是这个名字要记住后面要用</font>，填入刚刚的密钥后保存即可。
 
 ![](../images/1726712353697.png)  
 ![](../images/1726712353710.png)
@@ -95,7 +94,7 @@ jobs:
 
 二三四步为一个简单的gcc构建。
 
-第五步为构建发布，使用了[GH Release](https://github.com/marketplace/actions/gh-release)这个Action，`with`指定了参数，`token`指定给机器人用的token，与上文添加的一致(其实你不加这一行都可以)，`body_path`指定从根目录的`CHANGELOG.md`文件读取内容作为Release的内容(不加这一行也可以)，`files`指定Release的文件，`|`为Yaml的特定符号，其下可以使用多行文字。通配符`**`代表build目录下所有文件。
+第五步为构建发布，使用了[GH Release](https://github.com/marketplace/actions/gh-release)这个Action，`with`指定了参数，`token`指定给机器人用的token，与上文添加密钥时的名字一致，，`body_path`指定从根目录的`CHANGELOG.md`文件读取内容作为Release的内容(不加这一行也可以)，`files`指定Release的文件，`|`为Yaml的特定符号，其下可以使用多行文字。通配符`**`代表build目录下所有文件。
 
 效果:
 
