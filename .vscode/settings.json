@@ -1,8 +1,5 @@
 {
     "markdown.copyFiles.destination": {
-        "**/*": "../images/"
-    },
-    "files.associations": {
-        "a.h": "c"
+        "**/*": "../images/${documentBaseName}.png"
     }
 }
