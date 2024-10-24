@@ -2,7 +2,7 @@
 title: 逆向-CE找数据基址
 date: 2024-10-24 16:01
 tags: 逆向
-index_img: 
+index_img: ../images/逆向-CE找数据基址/image-24.png
 ---
 
 # 引文
