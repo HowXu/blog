@@ -105,7 +105,9 @@ alloc(float_zero, 4)
 float_zero:
 dd (float)0.0
 ```
+
 你也可以分配大块内存然后使用label写法:
+
 ```asm
 alloc(block,128)
 label(zero)
@@ -113,6 +115,7 @@ block:
 zero:
 dd (float)0.0
 ```
+
 还有一种办法是直接使用`xor`语法:
 
 ```asm
@@ -121,6 +124,7 @@ xor eax,eax
 //接下来eax里的值就是0了,在这里使用它,在jmp前pop它
 pop eax
 ```
+
 注意,这里用的是浮点数,`eax`应该换成`xmm0`或者`xmm1`这样的浮点数寄存器.
 
 说回来,现在直接注入,回到Tutur9重启游戏,可以看到效果:
