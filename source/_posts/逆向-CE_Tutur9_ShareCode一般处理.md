@@ -2,7 +2,7 @@
 title: 逆向-CE_Tutur9_ShareCode一般处理
 date: 2024-10-25 14:30
 tags: 逆向
-index_img: 
+index_img: ../images/逆向-CE_Tutur9_ShareCode一般处理/image-5.png
 ---
 
 # 前言
