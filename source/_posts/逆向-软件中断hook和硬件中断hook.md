@@ -2,7 +2,7 @@
 title: 逆向-软件中断hook和硬件中断hook
 date: 2024-10-26 17:15
 tags: 逆向
-index_img: 
+index_img: ../images/逆向-软件中断hook和硬件中断hook/image-6.png
 ---
 
 # 前言
