@@ -2,7 +2,7 @@
 title: 逆向-用C语言实现一个简单的Hook
 date: 2024-10-26 10:30
 tags: 逆向
-index_img: 
+index_img: ../images/逆向-用C语言实现一个简单的hook/image-6.png
 ---
 
 # 前言
