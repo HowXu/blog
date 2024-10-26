@@ -1,5 +1,8 @@
 {
     "markdown.copyFiles.destination": {
         "**/*": "../images/${documentBaseName}/"
+    },
+    "files.associations": {
+        "windows.h": "c"
     }
 }
