@@ -66,7 +66,11 @@ HANDLE hThread = CreateRemoteThread(game, NULL, NULL, (LPTHREAD_START_ROUTINE)pL
 
 ![alt text](../images/逆向-基于远程线程的DLL注入/image.png)
 
-使用VS2017工作集或者VS2015工作集.
+这里还是要注意一下架构问题,如果你想注入64位程序,注入器也应该使用64位模式构建.
+
+使用VS2017工作集或者VS2015工作集.如果某些特定程序可能不允许多线程调试,请使用`多线程(/MT)`进行构建.
+
+如果你发现注入时某些运行库不能满足,请在生成时选择发布模式`Release`,这样可以对减少某些调试库的依赖.
 
 现在,使用自己写的注入器配合自己写的软件断点hook的DLL,纯度直接就上来了.
 

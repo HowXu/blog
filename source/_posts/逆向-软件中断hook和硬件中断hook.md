@@ -17,6 +17,8 @@ index_img: ../images/逆向-软件中断hook和硬件中断hook/image-6.png
 
 ![alt text](../images/逆向-用C语言实现一个简单的hook/image-2.png)
 
+还是要关注指令集问题,PVZ是个32位的应用程序,你编写的代码应该遵循32位标准,包括一些特定函数和寄存器名称.比如在这个例子里是`esi`和`ebx`,但是64位程序里这个东西叫`rsi`和`rbx`.
+
 # 软件断点Hook
 
 ## 原理
@@ -36,6 +38,8 @@ index_img: ../images/逆向-软件中断hook和硬件中断hook/image-6.png
 ![alt text](../images/逆向-软件中断hook和硬件中断hook/image-1.png)
 
 ![alt text](../images/逆向-软件中断hook和硬件中断hook/image-2.png)
+
+如果你想要生成可注入64位程序的DLL,上面的操作应该是对64位平台进行的.如果你发现注入时某些运行库不能满足,请在生成时选择发布模式`Release`,这样可以减少某些调试库的依赖.
 
 实现代码如下:
 
