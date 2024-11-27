@@ -27,11 +27,11 @@ tags: github
 
 type 用于说明 git commit 的类别, 使用下面几个标识。
 
-feat:新功能(Feature)
+<font color=#01C6D7 size=4pt>feat:新功能(Feature)</font>
 
 “feat" 用于表示引入新功能或特性的变动。这种变动通常是在代码库中新增的功能, 而不仅仅是修复错误或进行代码重构。
 
-fix/to:修复 bug。
+<font color=#01C6D7 size=4pt>fix/to:修复 bug</font>
 
 *fix 关键字用于那些直接解决问题的提交。当创建一个包含必要更改的提交, 并且这些更改能够直接修复已识别的 bug 时, 应使用 fix。这表明提交的代码引入了解决方案, 并且问题已被立即解决。*
 
@@ -39,39 +39,48 @@ fix/to:修复 bug。
 
 **feat和fix应该出现在Changelog里面**
 
-docs:文档(Documentation)
+<font color=#01C6D7 size=4pt>docs:文档(Documentation)</font>
+
 
 *“docs” 表示对文档的变动, 这包括对代码库中的注释、README 文件或其他文档的修改。这个前缀的提交通常用于更新文档以反映代码的变更, 或者提供更好的代码理解和使用说明。*
 
-style: 格式(Format)
+<font color=#01C6D7 size=4pt>style: 格式(Format)</font>
+
 
 *“style” 用于表示对代码格式的变动, 这些变动不影响代码的运行。通常包括空格、缩进、换行等风格调整。*
 
-refactor:重构(不是新增功能, 也不是修改bug的代码变动)
+<font color=#01C6D7 size=4pt>refactor:重构(不是新增功能, 也不是修改bug的代码变动)</font>
+
 
 *“refactor” 表示对代码的重构, 即修改代码的结构和实现方式, 但不影响其外部行为。重构的目的是改进代码的可读性、可维护性和性能, 而不是引入新功能或修复错误。*
 
-perf: 优化相关, 比如提升性能、体验
+<font color=#01C6D7 size=4pt>perf: 优化相关, 比如提升性能、体验</font>
+
 
 *“perf” 表示与性能优化相关的变动。这可能包括对算法、数据结构或代码实现的修改, 以提高代码的执行效率和用户体验。*
 
-test:增加测试
+<font color=#01C6D7 size=4pt>test:增加测试</font>
+
 
 *“test” 表示增加测试, 包括单元测试、集成测试或其他类型的测试。*
 
-chore:构建过程或辅助工具的变动(杂物活)
+<font color=#01C6D7 size=4pt>chore:构建过程或辅助工具的变动(杂物活)</font>
+
 
 *“chore” 表示对构建过程或辅助工具的变动。这可能包括更新构建脚本、配置文件或其他与构建和工具相关的内容。*
 
-revert:回滚到上一个版本
+<font color=#01C6D7 size=4pt>revert:回滚到上一个版本</font>
+
 
 *“revert” 用于回滚到以前的版本, 撤销之前的提交。*
 
-merge:代码合并
+<font color=#01C6D7 size=4pt>merge:代码合并</font>
+
 
 *“merge” 表示进行代码合并, 通常是在分支开发完成后将代码合并回主线。*
 
-sync:同步主线或分支的 Bug
+<font color=#01C6D7 size=4pt>sync:同步主线或分支的 Bug</font>
+
 
 *“sync” 表示同步主线或分支的 Bug, 通常用于解决因为合并而引入的问题。*
 </br>
@@ -96,11 +105,13 @@ body是对这次改动的详细描述,最好解释一些重要的内容,改动�
 
 footer 部分只用于两种情况。
 
-不兼容变动
+<font color=#01C6D7 size=4pt>不兼容变动</font>
+
 
 *如果当前代码与上一个版本不兼容, 则Footer部分以BREAKING CHANGE开头, 后面是对变动的描述、以及变动理由和迁移方法。*
 
-关闭 Issue
+
+<font color=#01C6D7 size=4pt>关闭 Issue</font>
 
 *如果当前commit针对某个 issue, 那么可以在 Footer 部分关闭这个 issue*
 
