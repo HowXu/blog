@@ -161,5 +161,57 @@ sudo systemctl stop ASF #停止
 sudo systemctl restart ASF #重启
 ```
 
+## 7.ASF配合nginx反向域名代理
+
+直接看[官网](https://github.com/JustArchiNET/ArchiSteamFarm/wiki/IPC), 这里贴一下官网的nginx配置:
+
+```nginx
+server {
+	listen *:443 ssl;
+	server_name asf.mydomain.com;
+	ssl_certificate /path/to/your/certificate.crt;
+	ssl_certificate_key /path/to/your/certificate.key;
+
+	location ~* /Api/NLog {
+		proxy_pass http://127.0.0.1:1242;
+
+		# Only if you need to override default host
+                # proxy_set_header Host 127.0.0.1;
+
+		# X-headers should always be specified when proxying requests to ASF
+		# They're crucial for proper identification of original IP, allowing ASF to e.g. ban the actual offenders instead of your nginx server
+		# Specifying them allows ASF to properly resolve IP addresses of users making requests - making nginx work as a reverse proxy
+		# Not specifying them will cause ASF to treat your nginx as the client - nginx will act as a traditional proxy in this case
+		# If you're unable to host nginx service on the same machine as ASF, you most likely want to set KnownNetworks appropriately in addition to those
+		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+		proxy_set_header X-Forwarded-Host $host:$server_port;
+		proxy_set_header X-Forwarded-Proto $scheme;
+		proxy_set_header X-Forwarded-Server $host;
+
+		# We add those 3 extra options for websockets proxying, see https://nginx.org/en/docs/http/websocket.html
+		proxy_http_version 1.1;
+		proxy_set_header Connection "Upgrade";
+		proxy_set_header Upgrade $http_upgrade;
+	}
+
+	location / {
+		proxy_pass http://127.0.0.1:1242;
+
+		# Only if you need to override default host
+                # proxy_set_header Host 127.0.0.1;
+
+		# X-headers should always be specified when proxying requests to ASF
+		# They're crucial for proper identification of original IP, allowing ASF to e.g. ban the actual offenders instead of your nginx server
+		# Specifying them allows ASF to properly resolve IP addresses of users making requests - making nginx work as a reverse proxy
+		# Not specifying them will cause ASF to treat your nginx as the client - nginx will act as a traditional proxy in this case
+		# If you're unable to host nginx service on the same machine as ASF, you most likely want to set KnownNetworks appropriately in addition to those
+		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+		proxy_set_header X-Forwarded-Host $host:$server_port;
+		proxy_set_header X-Forwarded-Proto $scheme;
+		proxy_set_header X-Forwarded-Server $host;
+	}
+}
+```
+
 
 
