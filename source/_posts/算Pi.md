@@ -1,6 +1,6 @@
 ---
 title: 算Pi
-date: 2023-12-31 11:16:06
+date: 2025-1-17 19:00:00
 tags: c windows
 index_img: ../images/算Pi/image-1.png
 ---
