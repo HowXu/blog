@@ -83,13 +83,13 @@ Github页面：
 
 另外，mingw的make程序名字不是"make"，而是"mingw-make"，你可以到解压的文件夹中的bin中找到。可以把它复制一份在bin下，然后改名为make。
 
+你也可以在MSYS2中使用`pacman`下载MingW套件。
+
 ### 选择2：LLVM
 
 之后访问LLVM的[官网](https://clang.llvm.org/)，下载llvm安装器并打开：
 
 ![](../images/1726712354900.png)![](../images/1726712354939.png)安装的时候不用勾选创建桌面图标，但是可以勾选添加到Path中。
-
-实在想不通clang有整整2.5个G。
 
 安装完成后拿Terminal验证一下就可以了。
 
@@ -97,7 +97,7 @@ Github页面：
 
 ### 选择3：Cygwin
 
-Cygwin是Windows上的一个拟Linux环境的命令行工具，在Cygwin的命令行里可以运行绝大多数Linux环境下的命令，包括make等等，具体的安装方法很简单，可以参考这篇[文章](https://zhuanlan.zhihu.com/p/488477322)，写得比我好。
+Cygwin是Windows上的一个拟Linux环境的命令行工具，在Cygwin的命令行里可以运行绝大多数Linux环境下的命令，同时Cygwin提供一整套编译系统，包括make等等，具体的安装方法很简单，可以参考这篇[文章](https://zhuanlan.zhihu.com/p/488477322)，写得比我好。
 
 我在这里写一下怎么在Windows的Terminal里面使用Cygwin：
 
