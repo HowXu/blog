@@ -294,6 +294,8 @@ npm config set cache G:\ShareCache\nodejs\node_cache #这个文件夹会被用�
 npm config set prefix G:\ShareCache\nodejs\node_global #这个文件夹会被用于全局文件
 ```
 
+需要注意一下这个全局文件这个选项, 它的默认值在node主文件夹下面, 更换后通过`npm install -g`安装的文件就会被扔到更换的global文件夹下面, 如果更换了global文件夹还需要额外在PATH环境变量里面加上global文件夹的路径.
+
 设置node脚本全局可访问:  
 ![](../images/1726712355673.png)  
 后面那个`node_modules`文件夹是固定的
