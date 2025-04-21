@@ -134,6 +134,8 @@ Unity里面使用的C#更像是一种脚本语言，Unity不是编译器，它�
 
 我们无法安装.Net Framework作为开发环境，它只能作为Visual Studio的一个子配件，在.Net Framework中没有编译器也没有包管理器。建议至少使用.Net Core6
 
+<font color=red>在这里提个关于环境变量的说法</font>，[微软的官方文档](https://learn.microsoft.com/zh-cn/dotnet/core/install/linux-scripted-manual#set-environment-variables-system-wide)推荐设置的环境变量名称为`DOTNET_ROOT`，也只有这个名称可以被VSCode和Rider的LSP后端正常检测到，请不要效仿我随便取名字的做法。
+
 [.Net Core官网](https://dotnet.microsoft.com/zh-cn/languages/csharp)
 
 ## Windows
