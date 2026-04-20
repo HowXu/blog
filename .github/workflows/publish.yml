@@ -25,5 +25,5 @@ jobs:
         with:
           ACCESS_TOKEN: ${{ secrets.REPO_TOKEN }}
           REPOSITORY_NAME: HowXu/HowXu.github.io
-          BRANCH: master
+          BRANCH: main
           FOLDER: public
