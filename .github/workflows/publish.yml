@@ -21,9 +21,9 @@ jobs:
 
       # 2、部署到 GitHub Pages
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
-          ACCESS_TOKEN: ${{ secrets.REPO_TOKEN }}
-          REPOSITORY_NAME: HowXu/HowXu.github.io
-          BRANCH: main
-          FOLDER: public
+          token: ${{ secrets.REPO_TOKEN }}
+          repository-name: HowXu/HowXu.github.io
+          branch: main
+          folder: public
