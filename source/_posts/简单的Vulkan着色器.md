@@ -1,5 +1,5 @@
 ---
-title: 很久没做点什么的碎碎念
+title: 纯C/Vulkan实现着色器向量加法
 date: 2026-4-25 10:00
 tags: 
     - c
