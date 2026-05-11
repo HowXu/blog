@@ -7,10 +7,9 @@ tags:
 index_img: ../images/1726712354823.png
 ---
 
-
-# 写在最前
-
 写这篇文章纯属是因为windows自带的PowerShell和ubuntu系统原有的终端实在太丑陋了。
+
+<!-- more -->
 
 # Linux系统下的终端美化
 

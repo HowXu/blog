@@ -6,12 +6,14 @@ index_img: ../images/action.png
 ---
 
 
-# 说明
-GitHub Actions 是 GitHub 的持续集成服务，于2018年10月推出。通过Github Actions可以实现诸多自动化功能，比如自动打包，自动发布Release等等。除此之外，GitHub Actions完全免费。
 
+GitHub Actions 是 GitHub 的持续集成服务，于2018年10月推出。通过Github Actions可以实现诸多自动化功能，比如自动打包，自动发布Release等等。除此之外，GitHub Actions完全免费。
+<!-- more -->
 [GitHub Actions 文档](https://docs.github.com/zh/actions)：
 
 ![](../images/action.png)
+
+
 # 正文
 
 ## 1.设置仓库密钥

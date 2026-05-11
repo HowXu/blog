@@ -8,12 +8,13 @@ index_img: ../images/1726712356630.png
 ---
 
 
-# 写在前面-Termux
 
-  &emsp;Termux 是一个 Android 终端仿真应用程序，用于在 Android 手机上搭建一个完整的 Linux 环境。 不需要 root 权限 Termux 就可以正常运行。Termux 基本实现 Linux 下的许多基本操作。因此，我们同样可以通过termux使用git将项目提交到github。  
-  
-  &emsp;文章中git语法同样适用于windows，linux操作系统下的git提交。
-  
+&emsp;Termux 是一个 Android 终端仿真应用程序，用于在 Android 手机上搭建一个完整的 Linux 环境。 不需要 root 权限 Termux 就可以正常运行。Termux 基本实现 Linux 下的许多基本操作。因此，我们同样可以通过termux使用git将项目提交到github。  
+
+&emsp;文章中git语法同样适用于windows，linux操作系统下的git提交。
+<!-- more -->
+
+
 # 准备工作
 
 首先打开termux，使用下面的命令安装git工具包  

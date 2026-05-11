@@ -8,12 +8,12 @@ index_img: ../images/简单的Vulkan着色器/image-1.png
 
 ![alt text](../images/简单的Vulkan着色器/image-1.png)
 
-# 写在前面
-
 很久没有写博客了，编辑器也从[VSCode](https://code.visualstudio.com/)迁移到[VSCodium](https://vscodium.com/)，很多配置都跟着没了。花了点时间重新部署
 [Github Pages](https://pages.github.com/)，又重新配了一下[clangd](https://clangd.llvm.org/)什么的，简单地学一点点[Vulkan](https://www.vulkan.org/)相关的东西。  
 
 不得不说现在的大模型真是越来越好用了，这篇博客也会用到大模型的，比如补充一些知识，帮我插入超链接什么的，纠正一些说法之类的。现在大家真是有一个很好的老师了，再也不用像苦行僧一样了。
+
+<!-- more -->
 
 ---
 

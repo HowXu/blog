@@ -4,13 +4,13 @@ date: 2024-11-27 16:38
 tags: github
 ---
 
-# 前言
-
 参考[git commit 规范指南](https://segmentfault.com/a/1190000009048911), [Git Commit 之道:规范化 Commit Message 写作指南](https://hezephyr.github.io/posts/01.git-commit-%E4%B9%8B%E9%81%93%E8%A7%84%E8%8C%83%E5%8C%96-commit-message-%E5%86%99%E4%BD%9C%E6%8C%87%E5%8D%97/)
 
 最近做了一点项目,commit多了就发现自己这个commit信息非常复杂而且没有章法,大多是些update:xxx,upload:xxx,可读性基本是没有了.
 
 所以这里来写一下更正之后的commit规范,采集自上述两篇文章,用作备忘录.
+
+<!-- more -->
 
 # 正文
 

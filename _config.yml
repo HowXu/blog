@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: HowXu's Blog
-subtitle: 'Hello NCU'
-description: '我重生了, 但是是在NCU学计科'
+title: 浩绪 - 博客站
+subtitle: 'Hello World'
+description: '这博客也太博客了吧'
 keywords:
 author: HowXu
 language: zh-CN
@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://blog.howxu.com
+url: https://blog.howxu.cn
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -96,7 +96,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: fluid
+theme: icarus
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

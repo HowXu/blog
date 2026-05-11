@@ -5,8 +5,9 @@ tags: android
 index_img: ../images/7.jpg
 ---
 
-# 一些废话
 作为Android极客入门的辞典和一些个人的碎碎念。
+
+<!-- more -->
 
 # 正文
 

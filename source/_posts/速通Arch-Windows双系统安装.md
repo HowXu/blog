@@ -5,11 +5,11 @@ tags: linux
 index_img: ../images/1726712353866.png
 ---
 
-# 前言
+
 Arch Linux最大的特点就是干净，它只预装了Linux和Linux驱动，浏览器、桌面环境、文件管理器、记事本等等都要通过用户自己安装。这也就给了Arch非常多的定制空间。除此之外，这样干净的系统和高度定制化的设计给了开发者很好的体验。
 
 一台已经安装Windows 10操作系统的虚拟机，现在我们为它再安装一个Arch Linux系统，并实现由Arch的GRUB来引导两个系统随心切换。
-
+<!-- more -->
 [Arch官网](https://archlinux.org/)
 
 首先到官网下载最新版本的镜像文件，Arch是滚动发行的，所以版本一般会很新，你也可以用以前的版本。
@@ -20,6 +20,8 @@ Arch的安装是**纯命令行安装**，很抽象容易错，所以有了这篇
 
 [Arch Linux 详细安装教程，萌新再也不怕了！「2023.10」](https://zhuanlan.zhihu.com/p/596227524)
 [archlinux 基础安装 ](https://arch.icekylin.online/guide/rookie/basic-install.html)
+
+
 
 # 安装过程
 

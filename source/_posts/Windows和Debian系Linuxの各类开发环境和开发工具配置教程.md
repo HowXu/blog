@@ -8,12 +8,11 @@ index_img: ../images/1726712355624.png
 ---
 
 
-# 前言
-
-
 打不开msi文件看这篇[文章](https://blog.csdn.net/m0_74075298/article/details/132562795)
 
 关于Linux环境变量的一些事情[文章](https://blog.csdn.net/mayue_web/article/details/97023615) [文章2](https://blog.csdn.net/weixin_48896613/article/details/127170565)
+
+<!-- more -->
 
 有时候遇上多种环境，常常改写环境配置文件或者Windows打开系统设置很麻烦，可以使用两个系统的环境变量更改命令，更进一步可以写个C程序(利用system函数)来调用。
 

@@ -5,11 +5,10 @@ tags: c windows
 index_img: ../images/算Pi/image-1.png
 ---
 
-# 正文
-
 ![alt text](../images/算Pi/image-1.png)
 
 刷b站看到一个cython的东西, 例子用的是算pi, 忽然就想起之前看李天意的高数视频也说到了一种算pi方法, 就是泰勒展开arctan函数, 取1, 交给计算机迭代. 想了一下, 代码实现应该不是很难, 我用C写了下:
+<!-- more -->
 
 
 ```c
