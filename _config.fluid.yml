@@ -988,7 +988,7 @@ about:
   icons:
     - { class: "iconfont icon-github-fill", link: "https://github.com/HowXu", tip: "GitHub" }
     - { class: "iconfont icon-bilibili-fill", link: "https://space.bilibili.com/398016845", tip: "Bilibili" }
-    - { class: "iconfont icon-mail", link: "mailto:howxu366@outlook.com", tip: "E-Mail" }
+    - { class: "iconfont icon-mail", link: "mailto:i@howxu.cn", tip: "E-Mail" }
     - { class: "iconfont icon-th-large", link: "https://howxu.cn", tip: "个人主页" }
     #- { class: "iconfont icon-wechat-fill", qrcode: "/img/favicon.png" }
 
