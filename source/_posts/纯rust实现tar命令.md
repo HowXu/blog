@@ -258,7 +258,7 @@ impl EntarWrapper {
         let file_size = meta.len();
         let mut p: [Byte; 100] = [0u8; 100];
         if let Some(s) = rel.to_str() {
-            let s_rp = s.replace('\\', "/"); // 统一斜杠方向
+            // let s_rp = s.replace('\\', "/"); // 统一斜杠方向 这段在Blog里有点问题 记得取消注释
             let src = s_rp.as_bytes();
             let len = s.len().min(100); // 不能超过 100 字节
             p[..len].copy_from_slice(&src[..len]);
